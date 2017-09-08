@@ -9,6 +9,16 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.ubclaunchpad.calculator.CalculatorActivity">
 
+    <TextView
+        android:id="@+id/Result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/SimpleCalcLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="49dp"
+        android:text="TextView"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
     <LinearLayout
         android:id="@+id/SimpleCalcLayout"
         android:layout_width="match_parent"
@@ -62,26 +72,31 @@
         android:layout_below="@id/SimpleCalcLayout"
         android:layout_marginTop="20dp"
         android:orientation="horizontal">
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Extra functions:"/>
+
         <Button
             android:id="@+id/operation_extra1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="func1"/>
+            android:text="sin" />
+
         <Button
             android:id="@+id/operation_extra2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="func2"/>
+            android:text="cos" />
+
         <Button
             android:id="@+id/operation_extra3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="func3"/>
+            android:text="tan" />
 
 
     </LinearLayout>
+
 </RelativeLayout>
